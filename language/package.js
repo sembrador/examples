@@ -1,5 +1,5 @@
 Package.describe({
-  name: '[your-meteor-username]:orion-lang-[language-code]',
+  name: 'sembrador:orion-lang-es',
   /**
    * Try to keep the same version of Orion, so people know
    * which version is translated or maybe they want to use
@@ -10,7 +10,7 @@ Package.describe({
    * orion version (currently 1.3.x).
    */
   version: '1.3.0',
-  summary: 'Orion [language-name] language',
+  summary: 'Orion Spanish language',
   git: '[git-repository-url]',
   documentation: 'README.md'
 });
@@ -21,5 +21,5 @@ Package.onUse(function(api) {
   api.use('orionjs:lang-en@1.3.0'); // This is the base language
   api.imply('orionjs:lang-en');
 
-  api.addFiles('[language-code].js');
+  api.addFiles('es.js');
 });
